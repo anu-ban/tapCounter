@@ -1,0 +1,28 @@
+public class MainActivity{
+
+	Button btnClick;
+	Button btnRest;
+	TextView txtCount;
+
+protected void onCreate(Bundle savedInstanceState){
+		
+	btnClick = findViewById(R.id.buttonClick);
+	btnRest = findViewById(R.id.buttonReset);
+	txtCount = findViewById(R.id.textViewCount);
+
+	btnClick.setOnClickListener((v)-->(
+		String countValue = txtCount = txtCount.getText().toString90;
+		int inCountValue = Integer.parseInt(countValue);
+		inCountValue++;
+		
+		txtCount.setText(String.valueOf(intCountValue));
+	});
+
+btnReset.setOnClickListener(new View.OnClickListener(){
+
+	@Override
+	public void onCLick(View v){
+	txtCount.setText(String.valueOf(0));
+	}
+	});
+}}
